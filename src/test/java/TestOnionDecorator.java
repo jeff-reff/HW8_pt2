@@ -11,4 +11,12 @@ public class TestOnionDecorator {
         double actual = hotdogWithOnions.baseCost();
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testNameChange(){
+        Food hotdogWithOnions = new OnionDecorator(new HotDogs());
+        String expected = "hot dog, with onions";
+        String actual = hotdogWithOnions.itemName();
+        assertEquals(expected, actual);
+    }
 }
