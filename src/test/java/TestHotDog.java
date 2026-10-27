@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TestHotDog {
 
     @Test
-    public void baseCost(){
+    public void testBaseCost(){
         Food hotdog = new HotDogs();
         double expected = 3.00;
         double actual = hotdog.baseCost();
@@ -13,7 +13,7 @@ public class TestHotDog {
     }
 
     @Test
-    public void itemName(){
+    public void testItemName(){
         Food hotdog = new HotDogs();
         String expected = "hot dog";
         String actual = hotdog.itemName();
