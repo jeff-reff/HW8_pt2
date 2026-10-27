@@ -14,4 +14,15 @@ public class TestCustomerOrder {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testOrderTotalWithToppings(){
+        CustomerOrder order = new CustomerOrder();
+
+        double expected = 10.75;
+        order.addItem(new CheeseDecorator(new OnionDecorator(new Burger())));
+        order.addItem(new CheeseDecorator(new Fries()));
+        double actual = order.totalOrderCost();
+        assertEquals(expected, actual);
+    }
+
 }
