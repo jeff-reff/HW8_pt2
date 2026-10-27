@@ -11,4 +11,12 @@ public class TestKetchupDecorator {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testNameChange(){
+        Food burgerWithKetchup = new KetchupDecorator(new Burger());
+        String expected = "burger, with ketchup";
+        String actual = burgerWithKetchup.itemName();
+        assertEquals(expected, actual);
+    }
+
 }
