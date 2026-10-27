@@ -11,7 +11,7 @@ public class CheeseDecorator extends FoodDecorator{
 
     @Override
     public String itemName(){
-        return super.itemName();
+        return super.itemName() + ", with cheese";
     }
 }
 
