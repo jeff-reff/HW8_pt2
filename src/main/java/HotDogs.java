@@ -7,7 +7,7 @@ public class HotDogs implements Food{
 
     @Override
     public String itemName(){
-        return "";
+        return "hot dog";
     }
 
 }
