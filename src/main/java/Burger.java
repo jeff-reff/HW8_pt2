@@ -2,7 +2,7 @@ public class Burger implements Food{
 
     @Override
     public double baseCost(){
-        return 0.00;
+        return 5.00;
     }
 
     @Override
