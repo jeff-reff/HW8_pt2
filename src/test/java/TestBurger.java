@@ -12,4 +12,12 @@ public class TestBurger {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void itemName(){
+        Food burger = new Burger();
+        String expected = "burger";
+        String actual = burger.itemName();
+        assertEquals(expected, actual);
+    }
+
 }
