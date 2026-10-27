@@ -11,7 +11,7 @@ public class KetchupDecorator extends FoodDecorator{
 
     @Override
     public String itemName(){
-        return super.itemName();
+        return super.itemName() + ", with ketchup";
     }
 
 }
