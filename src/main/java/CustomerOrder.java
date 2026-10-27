@@ -20,7 +20,16 @@ public class CustomerOrder {
     }
 
     public String orderedItems(){
-        return "";
+        String receipt = "";
+        for (Food item : order){
+            receipt = receipt.concat(item.itemName());
+            if (order.indexOf(item) < order.size() - 1) {
+                receipt = receipt.concat(" & ");
+            }
+
+        }
+        return receipt;
     }
+
 
 }
