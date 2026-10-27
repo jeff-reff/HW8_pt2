@@ -22,7 +22,7 @@ public class CustomerOrder {
     public String orderedItems(){
         String receipt = "";
         for (Food item : order){
-            receipt = receipt.concat(item.itemName());
+            receipt = receipt.concat(item.itemName() + ": $" + item.baseCost() + ": $" + item.baseCost());
             if (order.indexOf(item) < order.size() - 1) {
                 receipt = receipt.concat(" & ");
             }
