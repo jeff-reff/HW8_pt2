@@ -6,7 +6,7 @@ public class CheeseDecorator extends FoodDecorator{
 
     @Override
     public double baseCost(){
-        return super.baseCost();
+        return super.baseCost() + 0.75;
     }
 
     @Override
