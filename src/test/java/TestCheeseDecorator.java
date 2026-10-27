@@ -11,6 +11,12 @@ public class TestCheeseDecorator {
         assertEquals(expected, actual);
     }
 
-
+    @Test
+    public void testNameChange(){
+        Food friesWithCheese = new CheeseDecorator(new Fries());
+        String expected = "fries, with cheese";
+        String actual = friesWithCheese.itemName();
+        assertEquals(expected, actual);
+    }
 
 }
