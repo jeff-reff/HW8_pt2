@@ -12,6 +12,10 @@ public class CustomerOrder {
     public double totalOrderCost(){
         double total = 0.00;
 
+        for (Food item : order){
+            total += item.baseCost();
+        }
+
         return total;
     }
 
