@@ -36,4 +36,15 @@ public class TestCustomerOrder {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testOrderNamesWithToppings(){
+        CustomerOrder order = new CustomerOrder();
+
+        String expected = "burger, with onions, with cheese: $6.00 & fries, with cheese: $4.75";
+        order.addItem(new CheeseDecorator(new OnionDecorator(new Burger())));
+        order.addItem(new CheeseDecorator(new Fries()));
+        String actual = order.orderedItems();
+        assertEquals(expected, actual);
+    }
+
 }
