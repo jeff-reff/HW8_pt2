@@ -2,7 +2,7 @@ public class HotDogs implements Food{
 
     @Override
     public double baseCost(){
-        return 0.00;
+        return 3.00;
     }
 
     @Override
