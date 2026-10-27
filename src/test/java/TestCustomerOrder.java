@@ -25,4 +25,15 @@ public class TestCustomerOrder {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testOrderNames(){
+        CustomerOrder order = new CustomerOrder();
+
+        String expected = "burger & fries";
+        order.addItem(new Burger());
+        order.addItem(new Fries());
+        String actual = order.orderedItems();
+        assertEquals(expected, actual);
+    }
+
 }
