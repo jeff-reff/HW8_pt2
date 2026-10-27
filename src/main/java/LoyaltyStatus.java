@@ -6,7 +6,7 @@ public class LoyaltyStatus {
     }
 
     public boolean isApartOfProgram(){
-        return false;
+        return member;
     }
 
     public double applyDiscount(double total){
