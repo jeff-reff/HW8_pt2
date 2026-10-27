@@ -29,7 +29,7 @@ public class TestCustomerOrder {
     public void testOrderNames(){
         CustomerOrder order = new CustomerOrder();
 
-        String expected = "burger & fries";
+        String expected = "burger: 5.00 & fries: 4.00";
         order.addItem(new Burger());
         order.addItem(new Fries());
         String actual = order.orderedItems();
