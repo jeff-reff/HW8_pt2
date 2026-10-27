@@ -10,7 +10,11 @@ public class LoyaltyStatus {
     }
 
     public double applyDiscount(double total){
-        return 0.00;
+        if (isApartOfProgram()){
+            return total * 0.80;
+        } else {
+            return total;
+        }
     }
 
 }
